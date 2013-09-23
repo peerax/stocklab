@@ -39,6 +39,8 @@
                                     'url' => array('/RecItem/index')),
                                 array('label' => 'เบิกวัสดุ',
                                     'url' => array('/PayItem/index')),
+                                array('label' => 'บันทึกวัสดุค้างใช้',
+                                    'url' => array('/inuseItem/index')),
                             ),
                         ),
                         array(
@@ -63,14 +65,6 @@
 
         <div class="container" id="page">
 
-            <?php /* if(isset($this->breadcrumbs)):?>
-              <?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-              'links'=>$this->breadcrumbs,
-              ));
-             *  endif
-             */ ?>
-
-
             <?php echo $content; ?>
 
             <div class="clear"></div>
@@ -78,18 +72,18 @@
             <div id="footer" align="center">
                 ลิขสิทธิ์ &copy; <?php echo date('Y'); ?> <a href="http://www.kaimintsoft.com">Kaimintsoft.</a><br/>
                 สงวนลิขสิทธิ์.<br/> รุ่นทดสอบ ห้ามจำหน่าย<br/>
-                        <!-- Histats.com  START  (standard)-->
-        <script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
-        <a href="http://www.histats.com" target="_blank" title="hit counter html code" ><script  type="text/javascript" >
-            try {
-                Histats.start(1, 2422133, 4, 1044, 200, 30, "00001000");
-                Histats.track_hits();
-            } catch (err) {
-            }
-            ;
-            </script></a>
-        <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?2422133&101" alt="hit counter html code" border="0"></a></noscript>
-        <!-- Histats.com  END  -->
+                <!-- Histats.com  START  (standard)-->
+                <script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+                <a href="http://www.histats.com" target="_blank" title="hit counter html code" ><script  type="text/javascript" >
+                    try {
+                        Histats.start(1, 2422133, 4, 1044, 200, 30, "00001000");
+                        Histats.track_hits();
+                    } catch (err) {
+                    }
+                    ;
+                    </script></a>
+                <noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?2422133&101" alt="hit counter html code" border="0"></a></noscript>
+                <!-- Histats.com  END  -->
             </div><!-- footer -->
 
         </div><!-- page -->

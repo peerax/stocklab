@@ -49,9 +49,9 @@ return array(
           '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
           ),
           ),
- * 
+ *
  */
-         
+
         'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=kaimints_other',
             'emulatePrepare' => true,
